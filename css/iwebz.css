@@ -333,8 +333,7 @@ font-weight: 600
 /*Holding*/
 .nav-tabs-custom .tab-content{padding: 0;}
 .listHolding{position: relative; margin:0 0 3px 0; float:left; width: 100%; background-color: #fff; border-left:solid 5px #fff; border-bottom: solid 1px #eae6e6; padding:15px 0;}
-.listHolding.bg-red{border-left-color:#f44336;}
-.listHolding.bg-green{border-left-color:#4caf50;}
+
 .tophd{float: left; width: 100%; font-size: 12px; font-weight: 300; margin-top: 5px; padding:5px 0; background-color: #222; color:#a9a9a9; font-family: arial;}
 .listHolding:nth-child(even){background-color:#f5f4f4;}
 .listHolding .marketvalue{font-size: 18px; font-weight: 600; color:#333; display: block;}
@@ -360,6 +359,12 @@ font-weight: 600
     font-size: 13px;
 }
 
+.listHolding.bg-red{border-left-color:#f44336;}
+.listHolding.bg-green{border-left-color:#4caf50;}
+.listHolding.bg-default{border-left-color:#333;}
+.bg-red .gainloss_perc{color:#f44336}
+.bg-green .gainloss_perc{color:#4caf50}
+.bg-default .gainloss_perc{color:#333}
 
 .tradeListing{cursor: pointer; display: table; width: 100%; color:#666; background-color: #fff; border-bottom: solid 1px #eae6e6;}
 .tradeListing .tradeList{float: left; width: 100%; padding: 15px 0;}
