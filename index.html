@@ -1,0 +1,499 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bootstrap Easy Sidebar Example</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap-colorpicker.min.css">
+<link rel="stylesheet" href="css/iwebz.css">
+<link href="css/styles.less" rel="stylesheet/less" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+<body>
+<div class="overlayNav"></div>
+<a href="#" id="back-to-top" title="Back to top"><i class="fa fa-angle-up"></i></a>
+
+<div id="cp1" class="colorpicker-component">
+  <input type="hidden" value="" />
+  <span class="input-group-addon"><i class="fa fa-gear"></i></span>
+</div>
+
+<nav class="navbar easy-sidebar">
+    <div class="navbar-header">
+    	<span class="navbar-brand" href="#">Hi Mohini!</span> 
+		<button type="button" class="navbar-toggle easy-sidebar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+
+    </div>
+    <ul class="nav navbar-nav"  id="_sidebar-menu" class="sidebar-menu">
+      <li id="module_V1" class="active"><a href="#MyPortfolio/V1" class="holding-mod-cls"><i class="fa fa-bitbucket"></i> <span>My Portfolio</span></a><div class="holding-refresh" onclick="app.onGetHolding();"><i class="fa fa-refresh"></i></div></li><li id="module_V2"><a href="#Trade/V2"><i class="fa fa-credit-card"></i> <span>Trade</span></a></li><li id="module_V3"><a href="#FinancialPlanning/V3"><i class="fa fa-signal"></i> <span>Financial Planning</span></a></li><li id="module_V4"><a href="#Profile/V4"><i class="fa fa-user"></i> <span>Profile</span></a></li><li id="module_V5"><a href="#Settings/V5"><i class="fa fa-gear"></i> <span>Settings</span></a></li><li id="module_V6"><a href="#NewsFeed/V6"><i class="fa fa-feed"></i> <span>News Feed</span></a></li><li id="module_V7"><a href="#ContactUs/V7"><i class="fa fa-envelope"></i> <span>Contact Us</span></a></li><li id="module_V8"><a href="#Watchlist/V8"><i class="fa fa-eye"></i> <span>Watchlist</span></a></li><li id="module_V9"><a href="#TradeList/V9"><i class="fa fa-list-ul"></i> <span>Trade List</span></a></li><li id="module_V9" class="logout" onclick="app.onUserLogout();"><span class="logout"><i class="fa fa-power-off"></i> <span>Logout</span></span></li>
+    </ul>
+  <!-- /.container-fluid --> 
+</nav>
+
+<div id="mContainer">
+
+<header class="header">
+	<div class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header pull-left">
+			<a class="navbar-brand" href="#">iWealth</a>
+		</div>
+	    <a class="navbar-text navbar-right pull-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	       <i class="glyphicon glyphicon-user"></i>
+	    </a>
+	    <ul class="userProfile dropdown-menu dropdown-menu-right">
+	     <li> 
+	        <span>Hi Mohini!</span>
+	      </li>
+	      <li> 
+	        <a class="logout" onclick="app.onUserLogout();" href="#"><i class="fa fa-power-off"></i> Logout</a>
+	      </li>
+	    </ul>
+	</div>
+	</div>
+</header>
+
+<div class="sticky">
+
+<div class="shortNav">
+   <ul id="shortNavList" class="shortNavList"><li class="listing active" id="shortNavList_V1"><a href="#MyPortfolio/V1"><span class="listing_icon bg-aqua"><i class="fa fa-folder-open"></i></span><h3 class="listing_heading">My Portfolio</h3></a></li><li class="listing" id="shortNavList_V2"><a href="#Trade/V2"><span class="listing_icon bg-green"><i class="fa fa-credit-card"></i></span><h3 class="listing_heading">Trade</h3></a></li><li class="listing" id="shortNavList_V3"><a href="#FinancialPlanning/V3"><span class="listing_icon bg-yellow"><i class="fa fa-signal"></i></span><h3 class="listing_heading">Financial Planning</h3></a></li><li class="listing" id="shortNavList_V4"><a href="#Profile/V4"><span class="listing_icon bg-red"><i class="fa fa-user"></i></span><h3 class="listing_heading">Profile</h3></a></li><li class="listing" id="shortNavList_V5"><a href="#Settings/V5"><span class="listing_icon bg-purple"><i class="fa fa-gear"></i></span><h3 class="listing_heading">Settings</h3></a></li><li class="listing" id="shortNavList_V6"><a href="#NewsFeed/V6"><span class="listing_icon bg-blue"><i class="fa fa-feed"></i></span><h3 class="listing_heading">News Feed</h3></a></li><li class="listing" id="shortNavList_V7"><a href="#ContactUs/V7"><span class="listing_icon bg-teal"><i class="fa fa-envelope"></i></span><h3 class="listing_heading">Contact Us</h3></a></li><li class="listing" id="shortNavList_V8"><a href="#Watchlist/V8"><span class="listing_icon bg-gray"><i class="fa fa-eye"></i></span><h3 class="listing_heading">Watchlist</h3></a></li><li class="listing" id="shortNavList_V9"><a href="#TradeList/V9"><span class="listing_icon bg-undefined"><i class="fa fa-list-ul"></i></span><h3 class="listing_heading">Trade List</h3></a></li></ul>
+  </div>
+
+<div class="top_listHolding " id="top_listHolding"><div class="col-xs-6"><div class="netWorth"><span class="txt">Net Worth</span><span class="amnt"><i class="fa fa-rupee"></i> 174,000</span></div></div><div class="col-xs-6"><div class="gainLoss"><span class="txt">Gain / Loss</span><span class="text-green amnt"><i class="fa fa-caret-up"></i> 3.362 <span class="amnt_perc">(0.22%)</span></span></div></div></div>
+
+</div>
+
+<div class="container-fluid" id="mContent">
+<section id="maincontent" class="content">
+
+<div class="row" id="_withholding">
+      <div class="nav-tabs-custom">
+        <ul class="nav nav-tabs  pull-right hidden " id="holdinggraph">
+          <li><a href="#accountinggraph" data-toggle="tab" onclick="app.trade.onShowAccountHoldingChart(app.trade.accountChartObj)"><i class="fa fa-pie-chart"></i></a></li>
+          <li class="active"><a href="#accountlisting" data-toggle="tab"><i class="fa  fa-th-large"></i></a></li>
+        </ul>
+        <div class="tab-content" id="accountholding">
+          <div class="tab-pane active" id="accountlisting">
+
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$44,449,145.45</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>115</span></span>
+				<div class="listBlock">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 99.90%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+		<a class="listHolding  bg-red" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$205,000</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>116</span></span>
+				<div class="listBlock">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$530,000</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>117</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$44,449,145.45</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>115</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$530,000</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>117</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$44,449,145.45</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>115</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$530,000</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>117</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$44,449,145.45</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>115</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$530,000</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>117</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$44,449,145.45</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>115</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$530,000</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>117</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$44,449,145.45</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>115</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$530,000</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>117</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$44,449,145.45</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>115</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$530,000</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>117</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$44,449,145.45</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>115</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$530,000</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>117</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$44,449,145.45</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>115</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$530,000</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>117</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+
+		<a class="listHolding  bg-green" href="#Holding/asset/115">
+			<div class="col-xs-6">
+				<span class="marketvalue">$44,449,145.45</span>
+				<span class="lcy"><i class="fa fa-rupee"></i> 
+				<span>1,273,356 </span>
+				</span>
+			</div>
+			<div class="col-xs-5">
+				<span class="accName">Ac No.: <span>115</span></span>
+				<div class="listBlock bg-green">
+						<span class="gainloss_perc"><i class="fa fa-caret-up"></i> 0%</span>
+				</div>		
+			</div>
+
+			<div class="holdingLink">
+				<i class="fa fa-angle-right"></i>
+			</div>
+		</a>
+
+
+
+
+         </div>
+          <!-- /.tab-pane -->
+          <div class="tab-pane" id="accountinggraph"></div>
+        <!-- /.tab-content -->
+        </div>
+  </div>
+</div>
+
+<div id="_noholding" style="display:none;">
+  <div class="callout callout-warning cls-rpresult">
+      <h4><i class="icon fa fa-info"></i> Information!</h4>
+      There is no investment in your account. Invest now for better returns.</div>  
+  <div class="callout callout-warning cls-rpresult" id="_noholdingquote"></div>
+</div>
+</section>
+  
+</div>
+</div>
+<script src="js/jquery-2.2.4.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/less.min.js"></script> 
+<script src="js/jquery.detect_swipe.js"></script> 
+<script src="js/bootstrap-colorpicker.min.js"></script> 
+<script src="js/custom.js"></script> 
+</body>
+</html>
