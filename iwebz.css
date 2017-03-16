@@ -1,0 +1,462 @@
+.cls-viewtitle{
+    font-size: 20px;
+    line-height: 50px;
+    color: #fff;
+    display: block;
+    font-weight: 500;
+    margin-left: 40px;    
+    left: 30%;
+    position: relative;
+    margin-left: 40px;
+}
+.cls-forgotpwd-error
+{
+	text-align:left;
+}
+.cls-forgotpwd-error p
+{
+	color:#b92219;
+	font-size:18px;
+	border-color:#e4a197;
+}
+.login-logo{
+  font-weight: 600;
+}
+.login-page
+{
+	background:white;
+}
+.errorDetails{background-color:#ffd1d1;text-align:left;
+color:#b92219;border-color:#e4a197;  padding: 5px 5px;}
+.cls-profile-text
+{
+  vertical-align: top !important;
+  padding: 1% !important;
+  font-size:17px !important;
+}
+
+.user-block .username {
+   margin-left:0px;
+}
+
+/****************************************Start slider button*****************************/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 26px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #367fa9;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #367fa9;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/****************************************End slider button*****************************/
+/*********************************Start Holdings***********************************/
+.cls-lbl-holding-amt{
+   font-size: 40px; 
+   font-weight: 400;
+}
+.cls-lbl-holding-perc
+{
+    font-size: 25px;
+    margin-right: 2%;
+      font-weight: 400;
+}
+.cls-lbl-holding-ac
+{
+  margin-left: 15%;
+  font-size: 15px;
+    font-weight: 400;
+}
+.cls-lbl-holding-desc
+{  
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.cls-holding-caret-arrow
+{
+    margin-top: -4px;
+    position: absolute;
+}
+.cls-holding-box-shadow{
+  box-shadow: 0px 3px 2px 2px grey;
+}
+.cls-holding-links a
+{
+  color:white !important;
+}
+.cls-holding-arrow{
+  font-size:20px;
+  font-weight: 500;
+
+}
+.cls-backbtn
+{
+  cursor:pointer;
+}
+.cls-holding-backicon
+{
+  padding-top: 15px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+/*********************************End Holdings***********************************/
+.tradebackbtn a
+{
+    font-size: 20px !important;
+    padding: 5px !important;  
+    color:black;
+}
+.tradebackbtn a:hover
+{
+  background-color: transparent!important;
+}
+
+.tradebackbtn i{
+    
+      margin-right: 5px;
+}
+
+
+/******************Start - Login Page*************************************/
+.login-input
+{
+  border-left:none;
+  border-right:none;
+  border-top:none;
+}
+.login-frm
+{
+  margin-top:25px;
+  margin-bottom:25px;
+}
+/******************End - Login Page*************************************/
+/***************************************Start Risk Profile*************************************/
+.cls-rp-qtn{
+   color:#000;
+   font-size:20px;
+   font-weight:500;
+   font-family: "Source Sans Pro",sans-serif;
+   padding-right:8px; 
+ }
+ 
+.cls-rp-ans{
+   color:#000;
+   font-size:18px;
+ }
+.cls-rp-btn
+{
+   color:#FFFFFF;
+   background-color:#000;
+   margin-top:15px;
+}
+.cls-rp-bg
+{
+   background-color:#fff;
+}
+
+.cls-rp-footer
+{ 
+  bottom:0;
+  position:fixed;
+  background-color:black;
+}
+.cls-rp-progressbarcolor
+{
+   background-color:#57909C;
+   height:8px;
+}
+.cls-rp-qtnansblock
+{ 
+    padding-left: 10%;
+    height: 100%;
+    padding-top: 20%;
+    padding-bottom: 60%;
+    padding-right: 10%;
+}
+.cls-rp-btnblock
+{ 
+    padding-left: 5%;
+    height: 60%;        
+    padding-right: 10%;
+}
+.cls-rp-sbmitbtn
+{
+  width:150px;
+  height:50px;
+   background-color:#57909C;
+  color:#FFFFFF;  
+  
+}
+.cls-rp-progresbar
+{
+  width: 70%;
+  background-color:gainsboro;
+}
+
+.cls-rp-inptgrp
+{
+  padding-right: 5px;
+  background-color:#292929!important;
+  border:0px;
+  padding-left:0px;
+}
+.cls-rp-inptcntrl
+{
+  margin-top:9px !important;
+}
+.cls-rp-prgressspan
+{
+   font-size:15px;
+}
+
+.cls-rp-qtnitem
+{
+  color:#57909C;
+  position: absolute;
+    margin-top: 4px;
+  font-size:19px; 
+}
+/***************************************End Risk Profile*************************************/
+/***************************************Start news feed*************************************/
+.cls-newsfeed-ul{
+  padding:0px;
+  list-style: none;
+}
+.cls-newsfeed-ul >li
+{
+padding:15px;
+background: #fff;
+margin-bottom: 20px;
+}
+.cls-newsfeed-ul >li>a
+{
+font-size: 16px;
+font-weight: 600
+}
+
+/***************************************End news feed*************************************/
+
+.pb-footer {
+    background: #fff;
+    padding: 15px;
+    color: #444;
+    border-top: 1px solid #d2d6de;
+    -webkit-transition: -webkit-transform .3s ease-in-out,margin .3s ease-in-out;
+    -moz-transition: -moz-transform .3s ease-in-out,margin .3s ease-in-out;
+    -o-transition: -o-transform .3s ease-in-out,margin .3s ease-in-out;
+    transition: transform .3s ease-in-out,margin .3s ease-in-out;
+
+    z-index: 820;
+    position:fixed;
+    bottom:0;
+    width:80.7%;    
+}
+@media (min-width:768px)
+{
+}
+
+@media (max-width:767px)
+{
+  .pb-footer{
+  width:100%;
+  }
+}
+
+.cls-rpresult{
+  font-size:16px;
+}
+.highcharts-container{width:100% !important; height:100% !important;}
+
+
+.cls-profile-lbl{
+    display: block;    
+    min-height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;    
+    color: #555;
+    background-color: #fff;    
+    border: 1px solid #ccc;
+}
+
+
+/*Holding*/
+.nav-tabs-custom .tab-content{padding: 0;}
+.listHolding{position: relative; margin:0 0 3px 0; float:left; width: 100%; background-color: #fff; border-left:solid 5px #fff; border-bottom: solid 1px #eae6e6; padding:15px 0;}
+.listHolding.bg-red{border-left-color:#f44336;}
+.listHolding.bg-green{border-left-color:#4caf50;}
+.tophd{float: left; width: 100%; font-size: 12px; font-weight: 300; margin-top: 5px; padding:5px 0; background-color: #222; color:#a9a9a9; font-family: arial;}
+.listHolding:nth-child(even){background-color:#f5f4f4;}
+.listHolding .marketvalue{font-size: 18px; font-weight: 600; color:#333; display: block;}
+.listHolding .marketvalue.sm{font-size: 16px; font-weight: 500;}
+.listHolding .assetclassname{font-size: 20px; font-weight: 600; color:#1274c0; display: block; margin:0; padding: 5px 0 0 0;}
+.listHolding .security_name{font-size: 16px; font-weight: 500; color:#666;}
+.listHolding .compName{font-size: 16px; color:#222; display: block; font-weight: 600; margin:0; padding: 5px 0 0 0;}
+.listHolding .lcy{color:#999;display: block; font-size: 12px; }
+.listHolding .accNum{font-size: 13px;}
+.listHolding .holdingLink{display: block; font-size: 20px; text-align: center; color:#333;    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);}
+.listBlock{position: relative; text-align: right;  display: block; }
+.listHolding.bg-red .listBlock i{color:#f44336;   font-weight: 600}
+.listHolding.bg-green .listBlock i{color:#4caf50;   font-weight: 600}
+.listBlock .gainloss_amnt{font-size: 14px; display: block; }
+.listBlock .gainloss_perc{font-size: 16px;  display: block;}
+
+.listHolding .accName {
+  display: block; text-align: right;
+       color: #555;
+    font-size: 13px;
+}
+
+
+.tradeListing{cursor: pointer; display: table; width: 100%; color:#666; background-color: #fff; border-bottom: solid 1px #eae6e6;}
+.tradeListing .tradeList{float: left; width: 100%; padding: 15px 0;}
+.tradeListing:nth-child(even){background-color:#f5f4f4;}
+.tradeListing.active{box-shadow:0 0 40px -14px rgba(0,0,0,0.8); background: #222;}
+.tradeListing.active .exc{color: #666;}
+.tradeListing .compName{font-size: 18px; font-weight: 600; color:#1274c0; padding: 5px 0 0 0; margin:0;}
+.tradeListing .exc{margin: 5px 0 0 0; display: block; color:#333; font-weight: 600}
+.tradeListing .qty{display: block;}
+.tradeListing .status{border-radius: 4px;  color:#fff; width: 82px; float: right; text-transform: capitalize; text-align: center; display: block;   padding:3px 10px; margin: 10px 0}
+.tradeListing .status.pending{background-color: #dd4b39;}
+.tradeListing .status.completed{background-color: #00a65a }
+.tradeListInfo{background-color: #fff; float: left; width: 100%; padding: 10px; border-top: solid 1px #d5d9dd;}
+.tradeListInfo ul{float: left; width: 100%; list-style: none; padding: 0;}
+.tradeListInfo table tr:nth-child(odd){ background-color: #d3f7ff}
+.tradeListInfo table th{color: #0a0a0a;font-size: 16px;}
+.tradeListInfo table td{font-size: 17px;}
+.tradeListInfo .fa{color: #404040; font-size: 15px; padding-right:2px; font-weight: 500;}
+
+/*.tradeListInfo li{width: 50%; float: left; box-shadow: 0 3px 8px -2px rgba(0,0,0,0.5); background: #fff; margin: 0 0 5px 0; border-radius: 4px;} 
+.tradeListInfo li strong{display: block; color: #1c5b80; padding: 10px; background: #ececec; border-radius: 4px 4px 0 0;}
+.tradeListInfo li span{font-size: 16px; padding: 5px 10px; display: block;}
+*/
+
+
+.tradeListInfo li {
+    width: 50%;
+    float: left;
+    background: #fff;
+    margin: 0 0 5px 0;
+    border-bottom: solid 1px #eee;
+    border-top: 0;
+    padding: 0 0 5px 0;
+}
+.tradeListInfo li strong {
+    display: block;
+    color: #272727;
+    background: #ffffff;
+    font-weight: normal;
+}
+
+.tradeListInfo li span {
+    font-size: 16px;
+    display: block;
+    color: #333;
+    font-weight: 600;
+}
+
+
+/*Add watchlist*/
+.watchlist_holding{cursor: pointer; display: table; width: 100%; padding: 15px 0; color:#999; background-color: #fff; border-bottom: solid 1px #eae6e6;}
+.watchlist_holding:nth-child(even){background-color:#f5f4f4;}
+.watchlist_holding .compName{font-size: 18px; color:#1b648e; display: block; font-weight: 600; margin:0;}
+.watchlist_holding .marketvalue{font-weight: 600; font-size: 16px;  color:#333; display: block;}
+.watchlist_holding .marketvalue i{font-size: 13px;}
+.watchlist_holding .gainloss_perc{font-size: 16px; }
+.watchlist_holding .listBlock{margin:10px 0;}
+
+.addWatchlist{position: fixed; right: 20px; bottom: 20%;  width: 50px; height: 50px; line-height: 45px; font-size: 36px; text-align: center; background-color: #1274c0; color:#fff; border-radius: 50%; border:solid 2px; box-shadow: 0 0 5px rgba(0,0,0,0.5); z-index: 999}
+.watchlistSearch{float:left; width: 100%;}
+.watchlistSearch .awesomplete{float:left; width: 80%;}
+.watchlistSearch .btn{float:left; width: 20%; border-radius: 0 2px 2px 0}
+
+/*News Feed*/
+.newsFeed{ font-weight: normal; padding:0; margin:0; background: #fff;}
+.newsFeed .newsList{list-style: none; border-bottom: solid 1px #eee;}
+.newsFeed .newsLink{color:#666; padding: 15px; display: block;}
+.newsFeed .media-body, .newsFeed .thumbnail{padding: 0; margin:0}
+.newsFeed h4{color:#176592; font-size: 16px; font-weight: 600}
+.newsFeed .newsActionBtn{padding: 15px 10px; background: none; border:0; outline:0; position: absolute; right: 0}
+.newsFeed .dropdown-menu{top:30px; right: 10px; border-color: #ccc; padding: 0}
+.newsFeed .dropdown-menu>li>a{padding:7px 20px;}
+
+.textWrap{overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+
+/*orderSummary*/
+.orderSummary{float: left; width: 100%; background-color: #fff}
+
+
+
+/*Trade Nav*/
+.tradeNav{list-style: none; padding: 0; margin:0 0 20px 0;}
+.tradeNav li a{background: #f3f3f3; color:#094e77; display:block; font-size:18px; font-weight: 600;/* box-shadow:0 5px 24px -14px #000;*/ box-shadow: 0 15px 10px -13px rgba(0,0,0,0.3);  margin: 10px 0; padding: 15px 20px}
+.tradeNav li span{padding: 0 10px;}
+.tradeNav li .fa{color:#367fa9;} 
+.tradeNav li .fa-angle-right{padding: 5px 0;} 
+.box-title{font-size: 20px; padding: 5px; color: #333;}
+
+.summaryList{float:left; width: 100%; list-style: none; margin:0; padding:0; }
+.summaryList li{float:left; width: 100%; padding: 10px; border-bottom: solid 1px #e8e8e8;}
+.summaryList li:nth-child(even){background-color:#f5f4f4;}
+.summaryList li strong{float: left; width:35%;}
+.summaryList li span{float:right; width: 60%; font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.summaryBtn{float:left; width: 100%; padding: 20px 0;}
+
+
+
+/*bootstrap modal*/
+.bootstrap-dialog.type-primary .modal-header{border-radius: inherit;}
